@@ -1,6 +1,7 @@
 * {
   margin:0;
   padding:0;
+  /* box-sizing: border-box; */
 } 
 canvas {
   display: block;
@@ -8,6 +9,24 @@ canvas {
 #container {
   width: 100vw;
   height: 100vh;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+  /* opacity: .5; */
+  /* border: 3px solid #f00; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vh;
+  height: 68.5vh;
+  box-sizing: border-box;
+}
+.video video {
+  width: 100%;
 }
 
 /*# sourceMappingURL=/app.ae05fb60.css.map */
